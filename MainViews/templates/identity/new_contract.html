@@ -1,0 +1,24 @@
+{% extends "identity/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+      <h1 style="text-align:center;color:white;margin-top:0%;margin-bottom:3%">Create a new storage space</h1>
+
+      <h3 style="text-align:center;color:white;margin-top:0%;margin-bottom:1%">Please enter the a locker name and upload your file</h3>
+
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-12">
+        <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          {{ form|crispy }}
+            <p></p>
+        <button class="btn btn-info" type="submit">Submit</button>
+
+        </form>
+    </div>
+  </div>
+</main>
+{% endblock content %}
+

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d26fac29-c81d-45f5-872f-4c80bc184b61" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataMgmt/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataMgmt/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainViews/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainViews/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainViews/templates/identity/org_contracts.html" beforeDir="false" afterPath="$PROJECT_DIR$/MainViews/templates/identity/org_contracts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainViews/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainViews/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1f0H4b9c7RWVVMK4X5LYLr9Yigf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/media/profile_pics" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/media/profile_pics" />
+      <recent name="$PROJECT_DIR$/identity/static/identity" />
+      <recent name="$PROJECT_DIR$/media" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/media/profile_pics" />
+      <recent name="$PROJECT_DIR$/identity/static/identity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests in /Users/Jack/Desktop/DataMgmt/MainViews/test_views.py">
+    <configuration name="azure" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DataMgmt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/identity" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backaz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in /Users/Jack/Desktop/DataMgmt/MainViews/test_views.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="DataMgmt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MainViews" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/MainViews/test_views.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests in /Users/Jack/Desktop/DataMgmt/MainViews/test_views.py" />
+        <item itemvalue="Python.azure" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d26fac29-c81d-45f5-872f-4c80bc184b61" name="Default Changelist" comment="" />
+      <created>1595347899563</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595347899563</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="560" y="205" key="#Inspections" timestamp="1595602010603">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="560" y="205" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1595602010603" />
+    <state x="1168" y="350" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598181486982">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1168" y="350" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1598181486982" />
+    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596799295008">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1596799295008" />
+    <state x="1141" y="418" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1596799004474">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1141" y="418" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1080@0.0.1920.1080" timestamp="1596799004474" />
+    <state width="1043" height="304" key="GridCell.Tab.0.bottom" timestamp="1598902962647">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1043" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1598902962647" />
+    <state width="1043" height="304" key="GridCell.Tab.0.center" timestamp="1598902962646">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1043" height="304" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1598902962646" />
+    <state width="1043" height="304" key="GridCell.Tab.0.left" timestamp="1598902962646">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1043" height="304" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1598902962646" />
+    <state width="1043" height="304" key="GridCell.Tab.0.right" timestamp="1598902962647">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1043" height="304" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1598902962647" />
+    <state x="650" y="170" key="SettingsEditor" timestamp="1599777711510">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="298" y="78" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1599573323151" />
+    <state x="650" y="170" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1599777711510" />
+    <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599750356241">
+      <screen x="0" y="23" width="1920" height="988" />
+    </state>
+    <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1599311383367" />
+    <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.988@0.23.1920.988" timestamp="1599750356241" />
+    <state x="100" y="84" width="1720" height="962" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1599567167900">
+      <screen x="0" y="23" width="1920" height="988" />
+    </state>
+    <state x="100" y="84" width="1720" height="962" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.23.1920.988@0.23.1920.988" timestamp="1599567167900" />
+    <state x="639" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1597577862814">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="426" y="272" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1597141394015" />
+    <state x="639" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1597577862814" />
+    <state x="639" y="363" key="com.intellij.ide.util.TipDialog/0.23.1920.988@0.23.1920.988" timestamp="1597488701017" />
+    <state x="626" y="183" width="667" height="714" key="find.popup" timestamp="1596885752870">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="626" y="183" width="667" height="714" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1596885752870" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1599775993462">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599775993462" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.23.1920.988@0.23.1920.988" timestamp="1597226686352" />
+  </component>
+</project>

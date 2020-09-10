@@ -1,0 +1,36 @@
+{% extends "identity/base.html" %}
+{% load static %}
+
+{% block content %}
+
+      <h1 style="text-align:center;color:white">My Recent Actions</h1>
+
+
+<main role="main" class="container">
+
+  <div class="row" align="center">
+
+        <div class="container mt-4" align="=center">
+
+
+ {% for k, v in recent_info.items %}
+<div class="card" style="width: 40rem;">
+    <div class="card-body">
+            <h5 class="card-title">{{ v.Action }}</h5>
+                    <p class="card-text">Locker Name: {{ v.lockername }} </p>
+
+            <p class="card-text">Date & Time: {{ k }} </p>
+
+
+    </div>
+</div>
+<p></p>
+{% endfor %}
+</div>
+</div>
+
+  </div>
+</main>
+
+{% endblock content %}
+

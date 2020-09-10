@@ -1,0 +1,58 @@
+{% extends "identity/base.html" %}
+{% block content %}
+
+
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-2">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+
+    </div>
+    <div class="col-md-8" align="center">
+                        <h1 style="margin-left:auto;margin-right:auto;display:block;margin-top:8%;margin-bottom:0%;color:white">Welcome {{ user.username}}!</h1>
+
+
+
+
+                  {% if user.profile.user_type == 'Individual User' %}
+
+        <h3 style="margin-left:auto;margin-right:auto;display:block;margin-top:10px;margin-bottom:0%;color:white">Please create a new contract, or manage your existing data.</h3>
+        {% endif %}
+
+                          {% if user.profile.user_type == 'Organisation' %}
+        <h3 style="margin-left:auto;margin-right:auto;display:block;margin-top:10px;margin-bottom:0%;color:white">Please request data, or manage your existing data.</h3>
+        {% endif %}
+
+          {% if user.username == '' %}
+
+           <h3 style="margin-left:auto;margin-right:auto;display:block;margin-top:10px;margin-bottom:0%;color:white">Please Create an Account or Login.</h3>
+        <a class="btn btn-light btn-lg btn-block" href="{% url 'register' %}" style="width: 350px; height: 60px; line-height: 40px; margin-left:auto;margin-right:auto;display:block;margin-top:15%;margin-bottom:0%">Sign Up</a>
+                <a class="btn btn-light btn-lg btn-block" href="{% url 'login' %}" style="width: 350px; height: 60px; line-height: 40px;margin-left:auto;margin-right:auto;display:block;margin-top:15%;margin-bottom:0%">Login</a></a>
+
+        {% endif %}
+
+          {% if user.profile.user_type == 'Individual User' %}
+<a class="btn btn-light btn-lg btn-block" href="{% url 'new_contract' %}" style="width: 350px; height: 60px; line-height: 40px; margin-left:auto;margin-right:auto;display:block;margin-top:15%;margin-bottom:0%">New Locker</a></a>
+        <a class="btn btn-light btn-lg btn-block" href="{% url 'contracts' %}" style="width: 350px; height: 60px; line-height: 40px;margin-left:auto;margin-right:auto;display:block;margin-top:15%;margin-bottom:0%">Manage My Data</a></a>
+
+        {% endif %}
+
+           {% if user.profile.user_type == 'Organisation' %}
+        <a class="btn btn-dark btn-lg btn-block bg-dark" href="{% url 'contracts' %}" style="width: 350px; height: 60px; line-height: 40px;margin-left:auto;margin-right:auto;display:block;margin-top:15%;margin-bottom:0%">Request Data</a></a>
+        <a class="btn btn-dark btn-lg btn-block bg-dark" href="{% url 'org_contracts' %}" style="width: 350px; height: 60px; line-height: 40px;margin-left:auto;margin-right:auto;display:block;margin-top:15%;margin-bottom:0%">Manage My Data</a></a>
+
+          {% endif %}
+
+        </p>
+      </div>
+  </div>
+</main>
+
+{% endblock content %}
+

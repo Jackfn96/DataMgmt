@@ -1,0 +1,163 @@
+{% extends "identity/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<script>
+function ConfirmDelete()
+{
+  var x = confirm("All data associated with this locker will be deleted: please ONLY proceed if you are comfortable with this.");
+  if (x == true)
+      var y = confirm("This locker will now be terminated: press OK to confirm. Press cancel to exit this process.");
+      if (y == true)
+            return true;
+      else
+            return false;
+  if (x == false)
+    return false;
+}
+</script>
+
+{% if user.profile.user_type == "Individual User" %}
+      <h1 style="text-align:center;color:white">My Active Lockers</h1>
+
+
+<form action="{% url 'contracts' %}" method="get">
+<div class="container mt-4 mb-4">
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+
+    <i class="fas fa-search" aria-hidden="true" ></i>
+
+  <input aria-label="Search" class="form-control form-control-lg" placeholder="Enter locker name here..."
+         style="width: 500px; height: 40px" type="text" name="q">
+
+        </div>
+        <div class="col" align="left">
+    <button class="btn btn-dark my-2 my-sm-0" type="submit" style="width: 200px; height: 40px" >Search Locker Name</button>
+    </div>
+
+    <div class="col-sm">
+    </div>
+
+  </div>
+</div>
+
+</form>
+
+
+
+{% endif %}
+
+{% if user.profile.user_type == "Organisation" %}
+      <h1 style="text-align:center;color:white">Available Lockers</h1>
+
+
+<form action="{% url 'contracts' %}" method="get">
+<div class="container mt-4 mb-4">
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+
+    <i class="fas fa-search" aria-hidden="true" ></i>
+
+  <input aria-label="Search" class="form-control form-control-lg" placeholder="Enter email here..."
+         style="width: 500px; height: 40px" type="text" name="q">
+
+        </div>
+        <div class="col" align="left">
+    <button class="btn btn-dark my-2 my-sm-0" type="submit">Search Email</button>
+    </div>
+
+    <div class="col-sm">
+    </div>
+
+  </div>
+</div>
+
+</form>
+{% endif %}
+
+
+<main role="main" class="container">
+
+  <div class="row" align="center">
+
+
+
+        <div class="container mt-4" align="=center">
+              {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+            <div class="row" align="center">
+
+
+                {% for k, v in contract_data.items %}
+                <div class="col-auto mb-4 ml-3" align="center">
+                    <div class="card" style="width: 20rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">{{ v.lockername }}</h5>
+                          <h6 class="card-title">{{ v.username }}</h6>
+                        <p class="card-text">{{ v.state }}</p>
+
+                          {% if v.state == "Available To Share" %}
+                          {% if user.profile.user_type == "Individual User" %}
+                        <a href="{% url 'state_change' %}?name={{ v.id }}" class="btn btn-dark">Share With Third Party</a>
+                                                    <p class="card-text"></p>
+
+                          {% endif %}
+
+                         {% if user.profile.user_type == "Organisation" %}
+                        <a href="{% url 'org_request' %}?name={{ v.id }}" class="btn btn-dark">Request Locker</a>
+                          {% endif %}
+                          {% endif %}
+
+                          {% if v.state == "Sharing With Third Party" %}
+                          <p class="card-text">Third Party: {{ v.requestor }}</p>
+                        <a href="{% url 'revoke' %}?name={{ v.id }}" class="btn btn-dark">Revoke Locker Access</a>
+                                                    <p class="card-text"></p>
+
+                          {% endif %}
+
+                          {% if v.state == "Sharing Request Pending" %}
+
+                          <p class="card-text">Third Party: {{ v.requestor }}</p>
+                          <p class="card-text">Intended Purpose: {{ v.purpose }}</p>
+                          <p class="card-text"></p>
+
+                          <a href="{% url 'accept_req' %}?name={{ v.id }}" class="btn btn-dark">Accept</a>
+
+                          <a href="{% url 'reject_req' %}?name={{ v.id }}" class="btn btn-dark">Reject</a>
+                          {% endif %}
+
+                           {% if user.profile.user_type == "Individual User" %}
+                         <a href="{% url 'view_data' %}?name={{ v.id }}" class="btn btn-dark">View Data</a>
+                                                    <p class="card-text"></p>
+
+                          {% endif %}
+
+                          <p></p>
+                          {% if not v.username %}
+                          <a href="{% url 'terminate' %}?name={{ v.id }}" class="btn btn-warning" onclick="return ConfirmDelete()">Terminate Storage</a>
+                          {% endif %}
+
+                      </div>
+                    </div>
+                    </div>
+
+{% endfor %}
+</div>
+</div>
+
+  </div>
+</main>
+
+{% endblock content %}
+

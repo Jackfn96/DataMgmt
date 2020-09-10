@@ -1,0 +1,17 @@
+{% extends "identity/base.html" %}
+
+{% block content %}
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-12">
+<h2 style="color:white">Successfully logged out</h2>
+        <div class="border-top pt-3">
+            <p>
+                 <a href="{% url 'login' %}">Log in again</a>
+            </p>
+        </div>
+   </div>
+  </div>
+</main>
+{% endblock content %}
+
