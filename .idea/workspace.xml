@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d26fac29-c81d-45f5-872f-4c80bc184b61" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataMgmt/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataMgmt/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainViews/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainViews/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainViews/templates/identity/org_contracts.html" beforeDir="false" afterPath="$PROJECT_DIR$/MainViews/templates/identity/org_contracts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainViews/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainViews/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
